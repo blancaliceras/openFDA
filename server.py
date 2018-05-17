@@ -223,7 +223,7 @@ class testHTTPRequestHandler(http.server.BaseHTTPRequestHandler): # Define el co
 
 socketserver.TCPServer.allow_reuse_address= True
 
-Handler = testHTTPRequestHandler #instancia de una clase que puede respoder a dos peticiones http dtintas, un navegador y los test
+Handler = testHTTPRequestHandler #instancia de una clase que puede respoder a dos peticiones http dtintas, un navegador y los test.
 
 httpd = socketserver.TCPServer(("", PORT), Handler) #asocia una ip y un puerto a tu manejador de peticiones. Cuando llega la peticion a la ip y puerto se manda automaticamente al maejador par que pueda responder a la peticion
 print("serving at port", PORT)
