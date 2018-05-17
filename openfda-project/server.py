@@ -6,7 +6,7 @@ import socketserver
 PORT=8000
 
 class testHTTPRequestHandler(http.server.BaseHTTPRequestHandler): # Define el comportamiento de lo que tienes que hacer ante un apetición http. Tenemos el recurso doget
-    # Constantes que he definido CAMBIAR NOMBRE
+    # Constantes que he definido
     OPENFDA_API_URL="api.fda.gov"
     OPENFDA_API_EVENT="/drug/label.json"
     OPENFDA_API_DRUG='&search=active_ingredient:'
